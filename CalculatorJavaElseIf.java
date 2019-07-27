@@ -21,22 +21,22 @@ public class CalculatorJavaElseIf {
 		
 		double num1,num2,ans;
                 boolean a = true;
-		char sign, q;  
+		char sign; 
                 
-                System.out.print("this is a calculator, +,-,/,*,^ accepted. press q to quit program.\nenter the first digit: "); 
+                System.out.print("this is a calculator, +,-,/,*,^ accepted.\nenter the first digit: "); 
               
 		
 		num2=input.nextInt(); 
                 
                 System.out.print("enter an operation: "); 
 		sign=input.next().charAt(0); 
+                
 		
-		System.out.print("enter the second digit: ");
+		System.out.print("enter the second digit: "); 
 		num1=input.nextInt();
                 
        while (a) {
-                System.out.print("quit program? ");
-		q=input.next().charAt(0);	
+        
            
 		System.out.print("enter the first digit: "); 
 		
@@ -47,8 +47,6 @@ public class CalculatorJavaElseIf {
 		
 		System.out.print("enter the second digit: ");
 		num1=input.nextInt();
-		
-                
 		
 		
 		if (sign == '+' ) {
@@ -73,15 +71,10 @@ public class CalculatorJavaElseIf {
                                 System.out.println(num1 + " "+sign +" "+num2 +"= "+" "+ ans );
                                 
                 }
-                else if (q == 'n') {
-                               
-                
-                }
-                else if (q == 'y') {
-                                System.out.println();
-                break;
-       }
-                else 
+                         
+        
+       
+                else {
                     
 		System.out.println("your input is incorrect, please try again.");
        }
